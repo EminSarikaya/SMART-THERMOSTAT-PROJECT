@@ -1,6 +1,13 @@
 # Prerequisites
 *.d
 
+# PlatformIO Specific (Critical for Architecture)
+.pio/
+.vscode/
+libdeps/
+*.bin
+*.elf
+
 # Compiled Object files
 *.slo
 *.lo
@@ -11,20 +18,19 @@
 *.gch
 *.pch
 
-# Linker files
-*.ilk
-
-# Debugger Files
+# Debugger & IDE Files
 *.pdb
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
 
 # Compiled Static libraries
 *.lai
@@ -37,5 +43,11 @@
 *.out
 *.app
 
-# debug information files
-*.dwo
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
